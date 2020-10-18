@@ -1,0 +1,116 @@
+/*GENERAL STYLES*/
+body {
+    font-family: Calibri;
+    font-size: 100%;
+}
+
+ul {
+    margin: revert;
+    padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.img-log {
+    position: relative;
+    left: 400px;
+    bottom: 0px;
+}
+
+body {
+    font-family: Calibri;
+    font-size: 100%;
+}
+
+.img-log {
+    position: absolute;
+    left: 35%;
+    bottom: 90%;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header {
+    display: inline-block;
+    width: 100%;
+}
+
+.side {
+    position: absolute;
+    left: 45%;
+    bottom: 70%;
+    width: 200px;
+    margin: 20px;
+}
+
+.menu {
+    display: block;
+    float: left;
+}
+
+.menu a {
+    background: white;
+    color: black;
+    display: inline-block;
+    padding: 10px;
+    transition: 0.5s all;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    background: orangered;
+    color: white;
+    padding: 10px 0 10px 20px;
+}
+
+.menu li:first-child a {
+    border-radius: 1px 1px 0 0;
+}
+
+.menu_list {
+    position: relative;
+    display: block ;
+}
+
+.menu_drop {
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    top: -9999em;
+    opacity: 0;
+    transition: 0.5s opacity;
+}
+
+.menu_list:hover .menu_drop {
+    top: 0;
+    opacity: 1;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

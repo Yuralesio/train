@@ -4,104 +4,97 @@ body {
     font-size: 100%;
 }
 
-ul {
-    margin: revert;
-    padding: 0;
+.img-log {
+    position: absolute;
+    left: 30%;
+    bottom: 90%;
+}
+.side {
+    position: absolute;
+    left: 34%;
+    bottom: 89%;
 }
 
 ul li {
     list-style-type: none;
-}
 
-a {
+}
+a{
+    font-weight: bold;
+    color: black;
     text-decoration: none;
 }
-
-.img-log {
-    position: relative;
-    left: 400px;
-    bottom: 0px;
-}
-
-body {
-    font-family: Calibri;
-    font-size: 100%;
-}
-
-.img-log {
-    position: absolute;
-    left: 35%;
-    bottom: 90%;
-}
-
-a {
-    text-decoration: none;
-
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.header {
-    display: inline-block;
-    width: 100%;
-}
-
-.side {
-    position: absolute;
-    left: 45%;
-    bottom: 70%;
-    width: 200px;
-    margin: 20px;
-}
-
-.menu {
-    display: block;
-    float: left;
-}
-
 .menu a {
     background: white;
     color: black;
     display: inline-block;
-    padding: 10px;
+    padding: 20px;
     transition: 0.5s all;
     font-weight: bold;
 }
-
+.menu_list{
+    position: relative;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+.menu_drop{
+    position: absolute;
+    right: 0px;
+    display: none;
+}
 .menu a:hover {
     background: orangered;
     color: white;
-    padding: 10px 0 10px 20px;
+    padding: 10px 10px 10px 10px;
+}
+.menu_list:hover .menu_drop{
+    display: block;
 }
 
-.menu li:first-child a {
-    border-radius: 1px 1px 0 0;
+/*MAIN PART*/
+.collection{
+    overflow: auto;
 }
-
-.menu_list {
-    position: relative;
-    display: block ;
+.collections>div:first-child{
+    padding-left: 0;
+    padding-right: 5px;
 }
-
-.menu_drop {
-    position: absolute;
-    width: 100%;
-    left: 100%;
-    top: -9999em;
-    opacity: 0;
-    transition: 0.5s opacity;
+.collections>div:last-child{
+    padding-left: 5px;
+    padding-right: 0px;
 }
-
-.menu_list:hover .menu_drop {
-    top: 0;
-    opacity: 1;
-
+.collection-title{
+    padding-bottom: 5px;
+    font-size: 36px;
 }
-
+.collection-ithem{
+    display: inline-block;
+    float: left;
+    padding-left:5px;
+    padding-right:5px;
+    width: 33.33%;
+    box-sizing: border-box;
+}
+.collection-ithem img{
+    width: 10%;
+}
+.collection-text h3{
+    padding: 0px 20px 20px 2px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+.collection-text p{
+    max-height: 75px;
+    overflow: hidden;
+}
+.collection-text button{
+    padding: 10px;
+    border-radius: 5px;
+    border:1px solid transparent;
+    outline: none;
+}
 
 
 

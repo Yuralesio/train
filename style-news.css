@@ -107,21 +107,21 @@ a {
     width: 50%;
     height: 250px;
     float: left;
-    background: url("img/новини img/ubisoft.jpg")  center / cover no-repeat ;
+    background: url("img/news img/ubisoft.jpg")  center / cover no-repeat ;
 }
 
 .content2 {
     width: 50%;
     height: 250px;
     float: left;
-    background: url("img/новини img/Netflix.jpg")  center / cover no-repeat ;
+    background: url("img/news img/Netflix.jpg")  center / cover no-repeat ;
 }
 
 .content3 {
     width: 50%;
     height: 150px;
     float: left;
-    background: url("img/новини img/Cyberpunk.jpg") center / cover no-repeat;
+    background: url("img/news img/Cyberpunk.jpg") center / cover no-repeat;
 }
 
 
@@ -129,7 +129,7 @@ a {
     width: 50%;
     height: 150px;
     float: left;
-    background: url("img/новини img/Assassins.jpg")center / cover no-repeat  ;
+    background: url("img/news img/Assassins.jpg")center / cover no-repeat  ;
 
 }
 
@@ -138,14 +138,14 @@ a {
     width: 50%;
     height: 300px;
     float: left;
-    background: url("img/новини img/Call of Duty.jpg")  center / cover no-repeat ;
+    background: url("img/news img/Call of Duty.jpg")  center / cover no-repeat ;
 }
 
 .content6 {
     width: 50%;
     height: 300px;
     float: left;
-    background: url("img/новини img/xbox.jpg")  center / cover no-repeat ;
+    background: url("img/news img/xbox.jpg")  center / cover no-repeat ;
 }
 
 .inner-content {

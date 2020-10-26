@@ -1,0 +1,187 @@
+/*GENERAL STYLES*/
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Calibri;
+    font-size: 100%;
+}
+/*header*/
+.title {
+    padding-left: 55px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    font-size: 36px;
+    border-bottom: 3px solid orangered;
+}
+
+.img-log {
+    position: absolute;
+    left: 30%;
+    bottom: 90%;
+    width:90px;
+    height:85px;
+}
+        /*(Menu)*/
+.side {
+    position: absolute;
+    left: 34%;
+    bottom: 89%;
+}
+
+ul li {
+    list-style-type: none;
+
+}
+
+a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.menu a {
+    background: white;
+    color: black;
+    display: inline-block;
+    padding: 20px;
+    transition: 0.5s all;
+    font-weight: bold;
+}
+
+.menu_list {
+    position: relative;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu_drop {
+    position: absolute;
+    right: 0px;
+    display: none;
+}
+
+.menu a:hover {
+    background: orangered;
+    color: white;
+    padding: 10px 10px 10px 10px;
+}
+
+.menu_list:hover .menu_drop {
+    display: block;
+}
+
+.row:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.row { display: inline-block; }
+/* start commented backslash hack \*/
+* html .row { height: 1%; }
+.row { display: block; }
+/* close commented backslash hack */
+.header {
+    margin-bottom: 1px;
+}
+
+.inner-header {
+    height: 0px;
+
+}
+/*header*/
+
+.content {
+    width: 70%;
+    float: left;
+    padding-left: 30px;
+
+}
+/*Content*/
+.content1 {
+    width: 50%;
+    height: 250px;
+    float: left;
+    background: url("img/новини img/ubisoft.jpg")  center / cover no-repeat ;
+}
+
+.content2 {
+    width: 50%;
+    height: 250px;
+    float: left;
+    background: url("img/новини img/Netflix.jpg")  center / cover no-repeat ;
+}
+
+.content3 {
+    width: 50%;
+    height: 150px;
+    float: left;
+    background: url("img/новини img/Cyberpunk.jpg") center / cover no-repeat;
+}
+
+
+.content4 {
+    width: 50%;
+    height: 150px;
+    float: left;
+    background: url("img/новини img/Assassins.jpg")center / cover no-repeat  ;
+
+}
+
+
+.content5 {
+    width: 50%;
+    height: 300px;
+    float: left;
+    background: url("img/новини img/Call of Duty.jpg")  center / cover no-repeat ;
+}
+
+.content6 {
+    width: 50%;
+    height: 300px;
+    float: left;
+    background: url("img/новини img/xbox.jpg")  center / cover no-repeat ;
+}
+
+.inner-content {
+    min-height: 700px;
+}
+
+.inner-content img{
+    max-width: 100%;
+}
+.saidebar {
+    width: 30%;
+    float: right;
+    padding-left: 6px;
+    padding-right: 30px;
+}
+
+.inner-saidebar {
+    background: url("https://cdn-l-mkt.cdprojektred.com/image/The_-Witcher_3_Wild_Hunt_5th_Anniversary-RGB_RU_fhd_ac93ogg961fkpzzg.jpg")center / cover no-repeat;
+    min-height: 700px;
+}
+.imgnews6{
+    height: 750px;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 12px;
+    width: 100%;
+    height: 90px;
+    padding: 21px;
+    background-color: orangered;
+}
+
+.footer p {
+    color: white;
+    float: right;
+}
+
+

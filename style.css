@@ -92,6 +92,7 @@ a {
     float: left;
     width: 33.33%;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .collection-ithem img {
@@ -111,6 +112,7 @@ a {
     max-height: 75px;
     overflow: hidden;
     width: 400px;
+    margin: 0px 20px;
 }
 
 .collection-text button {

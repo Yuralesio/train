@@ -28,7 +28,7 @@ body {
     width:90px;
     height:85px;
 }
-        /*(Menu)*/
+/*(Menu)*/
 .side {
     position: absolute;
     left: 34%;
@@ -100,21 +100,23 @@ a {
 /*header*/
 
 .content {
-    width: 70%;
+    width: 40%;
     float: left;
     padding-left: 30px;
+    padding-top: 5px;
 
 }
 /*Content1*/
 .content1 {
-    width: 50%;
+    width: 100%;
     height: 250px;
     float: left;
-    background: url("img/news_img/ubisoft.jpg")  center / cover no-repeat ;
+    background: url("img/announcement img/sackboy.jpg")  center / cover no-repeat ;
     display: block;
     position: relative;
     transition: 0.9s;
     border: 3px solid white;
+    margin-top: 14px;
 }
 .content1 p{
     transition: 0.9s;
@@ -122,7 +124,7 @@ a {
     font-weight: bold;
     font-size: 22px;
     opacity: 0;
-    padding-rightn: 10px;
+    padding-left: 25px;
 }
 .content1:hover p{
     transition: 0.9s;
@@ -130,16 +132,16 @@ a {
     opacity: 1;
 }
 .content1:hover {
-    background: url("img/news_img/ubisoft_news.jpg") center / cover no-repeat ;
+    background: url("img/announcement img/sackboy2.jpg") center / cover no-repeat ;
     transition: 0.9s;
 }
 
 /*Content2*/
 .content2 {
-    width: 50%;
+    width: 100%;
     height: 250px;
     float: left;
-    background: url("img/news_img/Netflix.jpg") center / cover no-repeat;
+    background: url("img/announcement img/Falconeer.jpg") center / cover no-repeat;
     display: block;
     position: relative;
     transition: 0.9s;
@@ -151,6 +153,7 @@ a {
     font-weight: bold;
     font-size: 22px;
     opacity: 0;
+    padding-left: 25px;
 }
 .content2:hover p{
     transition: 0.9s;
@@ -158,20 +161,23 @@ a {
     opacity: 1;
 }
 .content2:hover {
-    background: url("img/news_img/Netflix_news.jpg") center / cover no-repeat ;
+    background: url("img/announcement img/Falconeer2.jpg") center / cover no-repeat ;
     transition: 0.9s;
 }
 
 /*Content3*/
 .content3 {
-    width: 50%;
-    height: 150px;
+    width: 100%;
+    height: 200px;
     float: left;
     background: url("img/news_img/Cyberpunk.jpg") center / cover no-repeat;
     display: block;
     position: relative;
     transition: 0.9s;
-    border: 3px solid white;
+    border-top: 3px solid white;
+    border-left:3px solid white;
+    border-right:3px solid white;
+    border-bottom: 0px;
 }
 .content3 p{
     transition: 0.9s;
@@ -179,6 +185,7 @@ a {
     font-weight: bold;
     font-size: 22px;
     opacity: 0;
+    padding-left: 25px;
 }
 .content3:hover p{
     transition: 0.9s;
@@ -190,92 +197,6 @@ a {
     transition: 0.9s;
 }
 
-/*Content4*/
-.content4 {
-    width: 50%;
-    height: 150px;
-    float: left;
-    background: url("img/news_img/Assassins.jpg")center / cover no-repeat  ;
-    display: block;
-    position: relative;
-    transition: 0.9s;
-    border: 3px solid white;
-}
-.content4 p{
-    transition: 0.9s;
-    color: white;
-    font-weight: bold;
-    font-size: 22px;
-    opacity: 0;
-}
-.content4:hover p{
-    transition: 0.9s;
-    color: white;
-    opacity: 1;
-}
-.content4:hover {
-    background: url("img/news_img/Assassins_news.jpg") center / cover no-repeat ;
-    transition: 0.9s;
-}
-
-/*Content5*/
-.content5 {
-    width: 50%;
-    height: 300px;
-    float: left;
-    background: url("img/news_img/Call of Duty.jpg")  center / cover no-repeat ;
-    display: block;
-    position: relative;
-    transition: 0.9s;
-    border: 3px solid white;
-}
-.content5 p{
-    transition: 0.9s;
-    color: white;
-    font-weight: bold;
-    font-size: 22px;
-    opacity: 0;
-}
-.content5:hover p{
-    transition: 0.9s;
-    color: white;
-    opacity: 1;
-}
-.content5:hover {
-    background: url("img/news_img/Call of Duty_news.jpg") center / cover no-repeat ;
-    transition: 0.9s;
-}
-
-/*Content6*/
-.content6 {
-    width: 50%;
-    height: 300px;
-    float: left;
-    background: url("img/news_img/xbox.jpg")  center / cover no-repeat ;
-    display: block;
-    position: relative;
-    transition: 0.9s;
-    border: 3px solid white;
-}
-.content6 p{
-    transition: 0.9s;
-    color: white;
-    font-weight: bold;
-    font-size: 22px;
-    opacity: 0;
-}
-.content6:hover p{
-    transition: 0.9s;
-    color: white;
-    opacity: 1;
-}
-.content6:hover {
-    background: url("img/news_img/xbox_news.jpg") center / cover no-repeat ;
-    transition: 0.9s;
-}
-
-
-
 .inner-content {
     min-height: 700px;
 
@@ -284,21 +205,74 @@ a {
 .inner-content img{
     max-width: 100%;
 }
+.saidebar, .saidebar2 {
+    margin-top: 0px;
+}
+/*saidebar*/
 .saidebar {
     width: 30%;
     float: right;
-    padding-left: 6px;
-    padding-right: 30px;
+    padding-left: 30px;
+    padding-right: 6px;
+    padding-bottom:20px ;
+}
+.saidebar p{
+    transition: 0.9s;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    opacity: 0;
+    padding-top: 25px;
+    text-align: center;
+}
+.saidebar:hover p{
+    transition: 0.9s;
+    color: white;
+    opacity: 1;
+    padding-top: 550px;
 }
 
 .inner-saidebar {
-    background: url("https://cdn-l-mkt.cdprojektred.com/image/The_-Witcher_3_Wild_Hunt_5th_Anniversary-RGB_RU_fhd_ac93ogg961fkpzzg.jpg")center / cover no-repeat;
-    min-height: 700px;
+    background: url("img/announcement img/assassin.jpg")center / cover no-repeat;
+    min-height: 697px;
     display: block;
     transition: 0.9s;
 }
-.inner-saidebar:hover{
-    background: url("https://images8.alphacoders.com/753/thumb-1920-753199.jpg")center / cover no-repeat;
+.inner-saidebar:hover {
+    background: url("img/announcement img/assassin2.jpg")center / cover no-repeat;
+    transition: 0.7s;
+}
+
+/*saidebar2*/
+.saidebar2 {
+    width: 30%;
+    float: left;
+    padding-left: 6px;
+    padding-right: 0px;
+}
+.saidebar2 p{
+    transition: 0.9s;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    opacity: 0;
+    padding-top: 25px;
+    text-align: center;
+}
+.saidebar2:hover p{
+    transition: 0.9s;
+    color: white;
+    opacity: 1;
+    padding-top: 550px;
+}
+.inner-saidebar2 {
+    background: url("img/announcement img/spider.jpg")center / cover no-repeat;
+    min-height: 697px;
+    display: block;
+    transition: 0.9s;
+}
+.inner-saidebar2:hover {
+    background: url("img/announcement img/spider2.jpg")center / cover no-repeat;
     transition: 0.7s;
 }
 
@@ -319,5 +293,3 @@ a {
     color: white;
     float: right;
 }
-
-

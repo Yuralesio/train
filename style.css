@@ -2,6 +2,8 @@
 body {
     font-family: Calibri;
     font-size: 100%;
+    padding: 0px;
+    margin: 0px;
 }
 
 .img-log {
@@ -101,14 +103,14 @@ a {
 }
 
 .collection-text h3 {
-    padding: 0px 10px 0px 0px;
+    padding: 0px 0px 0px 0px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
 
 .collection-text p {
-    padding: 0px 10px 0px 0px;
+    padding: 0px 0px 0px 30px;
     max-height: 75px;
     overflow: hidden;
     width: 400px;
@@ -116,7 +118,7 @@ a {
 }
 
 .collection-text button {
-    padding: 10px;
+    margin: 10px;
     border-radius: 5px;
     border: 1px solid transparent;
     outline: none;

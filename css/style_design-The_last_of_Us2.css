@@ -2,18 +2,21 @@
 * {
     box-sizing: border-box;
 }
+
 html,
-body{
+body {
     height: 100%;
 }
+
 body {
     font-family: Calibri;
     font-size: 100%;
     padding: 0px;
     margin: 0px;
 }
+
 /*header*/
-.titleGlobal{
+.titleGlobal {
     width: 100%;
     padding-left: 75px;
     padding-top: 0px;
@@ -22,10 +25,12 @@ body {
     border-bottom: 3px solid orangered;
     margin-right: 85px;
 }
+
 .header {
     display: flex;
     width: 100%;
 }
+
 .title {
     width: 100%;
     padding-left: 75px;
@@ -40,9 +45,10 @@ body {
     position: relative;
     left: 30%;
     bottom: 100%;
-    width:90px;
-    height:85px;
+    width: 90px;
+    height: 85px;
 }
+
 /*(Menu)*/
 .side {
     position: absolute;
@@ -99,13 +105,15 @@ a {
     display: flex;
     flex-direction: column;
 }
+
 /*fullscreen*/
 .fullscreen {
     min-height: 100vh;
-    background: url("img/style_design-games/The_last_of_Us2/1.jpeg") center / cover no-repeat ;
+    background: url("img/style_design-games/The_last_of_Us2/1.jpeg") center / cover no-repeat;
     display: flex;
     padding: 20px 0;
 }
+
 .fullscreen-body {
     flex: 1 1 auto;
     max-width: 1000px;
@@ -118,9 +126,11 @@ a {
     padding: 0 20px;
 
 }
+
 .fullscreen-title {
 }
-.fullscreen_bg{
+
+.fullscreen_bg {
     min-height: 100vh;
     background: url("img/style_design-games/The_last_of_Us2/2.jpg") center / cover no-repeat fixed;
 }
@@ -128,10 +138,11 @@ a {
 /*fullscreen2*/
 .fullscreen2 {
     min-height: 100vh;
-    background: url("img/style_design-games/The_last_of_Us2/3.jpeg") center / cover no-repeat ;
+    background: url("img/style_design-games/The_last_of_Us2/3.jpeg") center / cover no-repeat;
     display: flex;
     padding: 20px 0;
 }
+
 .fullscreen-body2 {
     flex: 1 1 auto;
     max-width: 1000px;
@@ -144,9 +155,11 @@ a {
     padding: 0 20px;
 
 }
+
 .fullscreen-title2 {
 }
-.fullscreen_bg2{
+
+.fullscreen_bg2 {
     min-height: 100vh;
     background: url("img/style_design-games/The_last_of_Us2/NAUGHTY_DOG.jpeg") center / cover no-repeat fixed;
 }
@@ -154,10 +167,11 @@ a {
 /*fullscreen3*/
 .fullscreen3 {
     min-height: 100vh;
-    background: url("img/style_design-games/The_last_of_Us2/4.jpg") center / cover no-repeat ;
+    background: url("img/style_design-games/The_last_of_Us2/4.jpg") center / cover no-repeat;
     display: flex;
     padding: 20px 0;
 }
+
 .fullscreen-body3 {
     flex: 1 1 auto;
     max-width: 1000px;
@@ -170,24 +184,29 @@ a {
     padding: 0 20px;
 
 }
+
 .fullscreen-title3 {
 
 }
-h2{
+
+h2 {
     color: skyblue;
     font-weight: bold;
     font-size: 30px;
     text-align: center;
 }
+
 .content {
     padding-top: 20px;
     height: 100vh;
-    background: url("img/style_design-games/The_last_of_Us2/Fon.jpg") center / cover no-repeat ;
+    background: url("img/style_design-games/The_last_of_Us2/Fon.jpg") center / cover no-repeat;
 }
-.content-title{
+
+.content-title {
     color: peru;
 
 }
+
 .content_body {
     max-width: 1200px;
     margin: 0 auto;
@@ -198,13 +217,15 @@ h2{
 .content_body p:last-child {
     margin: 0;
 }
+
 /*Content_person*/
-h4{
+h4 {
     color: black;
     font-weight: bold;
     font-size: 30px;
     text-align: center;
 }
+
 .content_person {
     width: 100%;
     float: left;
@@ -212,18 +233,20 @@ h4{
     padding-top: 200px;
 
 }
+
 /*Content1*/
 .content1 {
     width: 33%;
     height: 400px;
     float: left;
-    background: url("img/style_design-games/The_last_of_Us2/The_Last_of_Us2.jpg")  center / cover no-repeat ;
+    background: url("img/style_design-games/The_last_of_Us2/The_Last_of_Us2.jpg") center / cover no-repeat;
     display: block;
     position: relative;
     transition: 0.9s;
     border: 3px solid white;
 }
-.content1 p{
+
+.content1 p {
     text-align: center;
     transition: 0.9s;
     color: white;
@@ -232,13 +255,15 @@ h4{
     opacity: 1;
     padding-rightn: 10px;
 }
-.content1:hover p{
+
+.content1:hover p {
     transition: 0.9s;
     color: white;
     opacity: 0;
 }
+
 .content1:hover {
-    background: url("img/style_design-games/The_last_of_Us2/Еля.webp") center / cover no-repeat ;
+    background: url("img/style_design-games/The_last_of_Us2/Еля.webp") center / cover no-repeat;
     transition: 0.9s;
 }
 
@@ -253,7 +278,8 @@ h4{
     transition: 0.9s;
     border: 3px solid white;
 }
-.content2 p{
+
+.content2 p {
     text-align: center;
     transition: 0.9s;
     color: white;
@@ -262,13 +288,15 @@ h4{
     opacity: 1;
     padding-rightn: 10px;
 }
-.content2:hover p{
+
+.content2:hover p {
     transition: 0.9s;
     color: white;
     opacity: 0;
 }
+
 .content2:hover {
-    background: url("img/style_design-games/The_last_of_Us2/Joel.webp") center / cover no-repeat ;
+    background: url("img/style_design-games/The_last_of_Us2/Joel.webp") center / cover no-repeat;
     transition: 0.9s;
 }
 
@@ -283,7 +311,8 @@ h4{
     transition: 0.9s;
     border: 3px solid white;
 }
-.content3 p{
+
+.content3 p {
     text-align: center;
     transition: 0.9s;
     color: white;
@@ -292,13 +321,15 @@ h4{
     opacity: 1;
     padding-rightn: 10px;
 }
-.content3:hover p{
+
+.content3:hover p {
     transition: 0.9s;
     color: white;
     opacity: 0;
 }
+
 .content3:hover {
-    background: url("img/style_design-games/The_last_of_Us2/Ебі.jpg") center / cover no-repeat ;
+    background: url("img/style_design-games/The_last_of_Us2/Ебі.jpg") center / cover no-repeat;
     transition: 0.9s;
 }
 
@@ -307,13 +338,14 @@ h4{
     width: 33%;
     height: 400px;
     float: left;
-    background: url("img/style_design-games/The_last_of_Us2/The_Last_of_Us2.jpg")center / cover no-repeat  ;
+    background: url("img/style_design-games/The_last_of_Us2/The_Last_of_Us2.jpg") center / cover no-repeat;
     display: block;
     position: relative;
     transition: 0.9s;
     border: 3px solid white;
 }
-.content4 p{
+
+.content4 p {
     text-align: center;
     transition: 0.9s;
     color: white;
@@ -322,13 +354,15 @@ h4{
     opacity: 1;
     padding-rightn: 10px;
 }
-.content4:hover p{
+
+.content4:hover p {
     transition: 0.9s;
     color: white;
     opacity: 0;
 }
+
 .content4:hover {
-    background: url("img/style_design-games/The_last_of_Us2/Dina.jpg") center / cover no-repeat ;
+    background: url("img/style_design-games/The_last_of_Us2/Dina.jpg") center / cover no-repeat;
     transition: 0.9s;
 }
 
@@ -337,13 +371,14 @@ h4{
     width: 33%;
     height: 400px;
     float: left;
-    background: url("img/style_design-games/The_last_of_Us2/The_Last_of_Us2.jpg")  center / cover no-repeat ;
+    background: url("img/style_design-games/The_last_of_Us2/The_Last_of_Us2.jpg") center / cover no-repeat;
     display: block;
     position: relative;
     transition: 0.9s;
     border: 3px solid white;
 }
-.content5 p{
+
+.content5 p {
     text-align: center;
     transition: 0.9s;
     color: white;
@@ -352,13 +387,15 @@ h4{
     opacity: 1;
     padding-rightn: 10px;
 }
-.content5:hover p{
+
+.content5:hover p {
     transition: 0.9s;
     color: white;
     opacity: 0;
 }
+
 .content5:hover {
-    background: url("img/style_design-games/The_last_of_Us2/Томі.png") center / cover no-repeat ;
+    background: url("img/style_design-games/The_last_of_Us2/Томі.png") center / cover no-repeat;
     transition: 0.9s;
 }
 
@@ -367,13 +404,14 @@ h4{
     width: 33%;
     height: 400px;
     float: left;
-    background: url("img/style_design-games/The_last_of_Us2/The_Last_of_Us2.jpg")  center / cover no-repeat ;
+    background: url("img/style_design-games/The_last_of_Us2/The_Last_of_Us2.jpg") center / cover no-repeat;
     display: block;
     position: relative;
     transition: 0.9s;
     border: 3px solid white;
 }
-.content6 p{
+
+.content6 p {
     text-align: center;
     transition: 0.9s;
     color: white;
@@ -382,14 +420,92 @@ h4{
     opacity: 1;
     padding-rightn: 10px;
 }
-.content6:hover p{
+
+.content6:hover p {
     transition: 0.9s;
     color: white;
     opacity: 0;
 }
+
 .content6:hover {
-    background: url("img/style_design-games/The_last_of_Us2/Мерлін.jpg") center / cover no-repeat ;
+    background: url("img/style_design-games/The_last_of_Us2/Мерлін.jpg") center / cover no-repeat;
     transition: 0.9s;
+}
+
+/*Слайдер*/
+.slick-slider {
+}
+
+/*Обмежуюча оболонка*/
+.slick-list {
+    overflow: hidden;
+}
+
+/*Стрічка слайду*/
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+
+/*Конкретний слайдер*/
+.slider {
+    position: relative;
+
+}
+
+.slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin: -60px 0px 0px 0px;
+    z-index: 10;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.slider .slick-arrow.slick-prev {
+    left: 0;
+    background: url("img/slaider/left-arrow.svg") 0 0 / 100% no-repeat;
+    border: 0px solid white;
+}
+
+.slider .slick-arrow.slick-next {
+    background: url("img/slaider/right-arrow.svg") 0 0 / 100% no-repeat;
+    right: 0;
+    border: 0px solid white;
+}
+
+.slider-item {
+    padding-top: 20px;
+    text-align: center;
+    height: 585px;
+    width: 100%;
+}
+
+.slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider .slick-dots li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.slider .slick-dots button {
+    font-size: 0;
+    width: 8px;
+    height: 13px;
+    background: orangered;
+    border-radius: 50%;
+    border: 0px;
+}
+
+.slider .slick-dots li.slick-active button {
+    background: transparent;
+    background: darkgray;
+    border: 1px solid wheat;
 }
 
 

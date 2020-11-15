@@ -5,6 +5,8 @@
 body {
     font-family: Calibri;
     font-size: 100%;
+    padding: 0;
+    margin: 0;
 }
 /*header*/
 .header {
@@ -12,13 +14,18 @@ body {
     width: 100%;
 }
 .title {
+    display: flex;
     width: 100%;
     padding-left: 75px;
     padding-top: 0px;
     padding-bottom: 20px;
     font-size: 36px;
-    border-bottom: 3px solid orangered;
     margin-right: 85px;
+    border-bottom: 3px solid orangered;
+    margin-bottom: 0;
+}
+.title h2 {
+    float: left;
 }
 
 .img-log {
@@ -28,11 +35,18 @@ body {
     width:90px;
     height:85px;
 }
-        /*(Menu)*/
+/*(Menu)*/
+.header{
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: white;
+}
 .side {
+    display: flex;
     position: absolute;
     left: 34%;
-    bottom: 89%;
 }
 
 ul li {
@@ -79,42 +93,21 @@ a {
     z-index: 2;
 }
 
-.row:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
+
+/*Content*/
+.inner-content {
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+    grid-gap: 6px;
+    padding: 0px 15px;
 }
 
-.row { display: inline-block; }
-/* start commented backslash hack \*/
-* html .row { height: 1%; }
-.row { display: block; }
-/* close commented backslash hack */
-.header {
-    margin-bottom: 1px;
-}
-
-/*header*/
-
-.content {
-    width: 70%;
-    float: left;
-    padding-left: 30px;
-
-}
 /*Content1*/
 .content1 {
-    width: 50%;
+    background: url("img/news_img/ubisoft.jpg")  center / cover no-repeat;
+    grid-column: 1/2;
     height: 250px;
-    float: left;
-    background: url("img/news_img/ubisoft.jpg")  center / cover no-repeat ;
-    display: block;
-    position: relative;
     transition: 0.9s;
-    border: 3px solid white;
 }
 .content1 p{
     transition: 0.9s;
@@ -136,14 +129,10 @@ a {
 
 /*Content2*/
 .content2 {
-    width: 50%;
-    height: 250px;
-    float: left;
     background: url("img/news_img/Netflix.jpg") center / cover no-repeat;
-    display: block;
-    position: relative;
+    grid-column: 2/3;
+    height: 250px;
     transition: 0.9s;
-    border: 3px solid white;
 }
 .content2 p{
     transition: 0.9s;
@@ -164,14 +153,11 @@ a {
 
 /*Content3*/
 .content3 {
-    width: 50%;
+    background: url("img/news_img/Assassins.jpg") center / cover no-repeat;
+    grid-column: 2/3;
+    grid-row: 2/3;
     height: 150px;
-    float: left;
-    background: url("img/news_img/Cyberpunk.jpg") center / cover no-repeat;
-    display: block;
-    position: relative;
     transition: 0.9s;
-    border: 3px solid white;
 }
 .content3 p{
     transition: 0.9s;
@@ -186,20 +172,18 @@ a {
     opacity: 1;
 }
 .content3:hover {
-    background: url("img/news_img/Cyberpunk_news.jpg") center / cover no-repeat ;
+    background: url("img/news_img/Assassins_news.jpg") center / cover no-repeat ;
     transition: 0.9s;
 }
 
 /*Content4*/
 .content4 {
-    width: 50%;
+    background: url("img/news_img/Cyberpunk.jpg")center / cover no-repeat;
+    grid-column: 1/2;
+    grid-row: 2/3;
     height: 150px;
-    float: left;
-    background: url("img/news_img/Assassins.jpg")center / cover no-repeat  ;
-    display: block;
-    position: relative;
     transition: 0.9s;
-    border: 3px solid white;
+
 }
 .content4 p{
     transition: 0.9s;
@@ -214,20 +198,16 @@ a {
     opacity: 1;
 }
 .content4:hover {
-    background: url("img/news_img/Assassins_news.jpg") center / cover no-repeat ;
+    background: url("img/news_img/Cyberpunk_news.jpg") center / cover no-repeat ;
     transition: 0.9s;
 }
 
 /*Content5*/
 .content5 {
-    width: 50%;
-    height: 300px;
-    float: left;
     background: url("img/news_img/Call of Duty.jpg")  center / cover no-repeat ;
-    display: block;
-    position: relative;
+    grid-column: 1/2;
+    height: 300px;
     transition: 0.9s;
-    border: 3px solid white;
 }
 .content5 p{
     transition: 0.9s;
@@ -248,14 +228,11 @@ a {
 
 /*Content6*/
 .content6 {
-    width: 50%;
-    height: 300px;
-    float: left;
     background: url("img/news_img/xbox.jpg")  center / cover no-repeat ;
-    display: block;
-    position: relative;
+    grid-column: 2/3;
+    height: 300px;
     transition: 0.9s;
-    border: 3px solid white;
+
 }
 .content6 p{
     transition: 0.9s;
@@ -271,6 +248,32 @@ a {
 }
 .content6:hover {
     background: url("img/news_img/xbox_news.jpg") center / cover no-repeat ;
+    transition: 0.9s;
+}
+
+/*Content7*/
+.content7 {
+    background: url("img/news_img/Witcher_3_news.jpg")  center / cover no-repeat ;
+    grid-column: 3/4;
+    grid-row: 1/6;
+    height: 712px;
+    transition: 0.9s;
+
+}
+.content7 p{
+    transition: 0.9s;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    opacity: 0;
+}
+.content7:hover p{
+    transition: 0.9s;
+    color: white;
+    opacity: 1;
+}
+.content7:hover {
+    background: url("img/news_img/Witcher_3.jpg") center / cover no-repeat ;
     transition: 0.9s;
 }
 
@@ -306,9 +309,61 @@ a {
     height: 750px;
 }
 
+/*icons*/
+.container {
+    display: flex;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+}
+.social {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    list-style: none;
+    width: 400px;
+}
+.social_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 5px solid white;
+    font-size: 25px;
+    transition: all 0.3s;
+}
+.facebook:hover {
+    border-color: #3636be;
+    box-shadow: 0px 0px 6px #3636be ;
+    color: #3636be;
+}
+.instagram:hover {
+    border-color: #f3209b;
+    box-shadow: 0px 0px 6px #f3209b;
+    color: #f3209b;
+}
+.twitter:hover {
+    border-color: #00aced;
+    box-shadow: 0px 0px 6px #00aced;
+    color: #00aced;
+}
+.whatsapp:hover {
+    border-color: #16bc16;
+    box-shadow: 0px 0px 6px #16bc16;
+    color: #16bc16;
+}
+.youtube:hover {
+    border-color: #ff0000;
+    box-shadow: 0px 0px 6px  #ff0000;
+    color:  #ff0000;
+}
+
 /* FOOTER */
 .footer {
-    margin-top: 12px;
+    margin-top: 12px;;
     width: 100%;
     height: 90px;
     padding: 21px;
@@ -316,8 +371,8 @@ a {
 }
 
 .footer p {
+    display: flex;
     color: white;
     float: right;
+    margin: 0 0 0 0;
 }
-
-

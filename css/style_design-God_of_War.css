@@ -1,0 +1,605 @@
+/*GENERAL STYLES*/
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: Calibri;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/*header*/
+.titleGlobal {
+    width: 100%;
+    padding-left: 75px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    font-size: 36px;
+    border-bottom: 3px solid orangered;
+    margin-right: 85px;
+    margin-bottom: 0;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+}
+
+.title {
+    display: flex;
+    width: 100%;
+    padding-left: 75px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    font-size: 36px;
+    margin-right: 85px;
+    border-bottom: 3px solid orangered;
+}
+.title h2 {
+    float: left;
+}
+
+.img-log {
+    position: relative;
+    left: 30%;
+    bottom: 100%;
+    width: 90px;
+    height: 85px;
+}
+
+/*(Menu)*/
+.header{
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: white;
+}
+.side {
+    display: flex;
+    position: absolute;
+    left: 34%;
+}
+
+ul li {
+    list-style-type: none;
+
+}
+
+a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.menu a {
+    background: white;
+    color: black;
+    display: inline-block;
+    padding: 20px;
+    transition: 0.5s all;
+    font-weight: bold;
+}
+
+.menu_list {
+    position: relative;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu_drop {
+    position: absolute;
+    right: 0px;
+    display: none;
+}
+
+.menu a:hover {
+    background: orangered;
+    color: white;
+    padding: 10px 10px 10px 10px;
+}
+
+.menu_list:hover .menu_drop {
+    display: block;
+    z-index: 2;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*fullscreen*/
+.fullscreen {
+    min-height: 100vh;
+    background: url("img/style_design-games/God_of_War/1.png") center / cover no-repeat;
+    display: flex;
+    padding: 20px 0;
+}
+
+.fullscreen-body {
+    flex: 1 1 auto;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 40px;
+    padding: 0 20px;
+
+}
+
+.fullscreen-title {
+}
+
+.fullscreen_bg {
+    min-height: 100vh;
+    background: url("img/style_design-games/God_of_War/2.jpg") center / cover no-repeat fixed;
+}
+
+/*fullscreen2*/
+.fullscreen2 {
+    min-height: 100vh;
+    background: url("img/style_design-games/God_of_War/3.jpg") center / cover no-repeat;
+    display: flex;
+    padding: 20px 0;
+}
+
+.fullscreen-body2 {
+    flex: 1 1 auto;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 40px;
+    padding: 0 20px;
+
+}
+
+.fullscreen-title2 {
+}
+
+.fullscreen_bg2 {
+    min-height: 100vh;
+    background: url("img/style_design-games/God_of_War/God_of_War_SMS.jpg") center / cover no-repeat fixed;
+}
+
+/*fullscreen3*/
+.fullscreen3 {
+    min-height: 100vh;
+    background: url("img/style_design-games/God_of_War/4.jpg") center / cover no-repeat;
+    display: flex;
+    padding: 20px 0;
+}
+
+.fullscreen-body3 {
+    flex: 1 1 auto;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 40px;
+    padding: 0 20px;
+
+}
+
+.fullscreen-title3 {
+
+}
+
+h2 {
+    color: skyblue;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+.content {
+    height: 100vh;
+    background: url("img/style_design-games/God_of_War/God_of_War_text_decoration.jpg") center / cover no-repeat;
+}
+
+.content-title {
+    color: peru;
+
+}
+
+.content_body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    color: white;
+}
+
+.content_body p:last-child {
+    margin: 0;
+}
+
+
+h4 {
+    border-radius: 50%;
+    background: orangered;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 0px 65px 25px 65px;
+}
+h5 {
+    border-radius: 50%;
+    background: orangered;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 50px 65px 10px 65px;
+}
+
+/*Content_person*/
+.content_person {
+    width: 100%;
+    float: left;
+    padding-left: 15px;
+    padding-top: 200px;
+
+}
+
+/*Content1*/
+.content1 {
+    width: 33%;
+    height: 400px;
+    float: left;
+    background: url("img/style_design-games/God_of_War/God_of_War_logo.jpg") center / cover no-repeat;
+    display: block;
+    position: relative;
+    transition: 0.9s;
+    border: 3px solid white;
+}
+
+.content1 p {
+    text-align: center;
+    transition: 0.9s;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    opacity: 1;
+    padding-rightn: 10px;
+}
+
+.content1:hover p {
+    transition: 0.9s;
+    color: white;
+    opacity: 0;
+}
+
+.content1:hover {
+    background: url("img/style_design-games/God_of_War/persona_Кратос.jpg") center / cover no-repeat;
+    transition: 0.9s;
+}
+
+/*Content2*/
+.content2 {
+    width: 33%;
+    height: 400px;
+    float: left;
+    background: url("img/style_design-games/God_of_War/God_of_War_logo.jpg") center / cover no-repeat;
+    display: block;
+    position: relative;
+    transition: 0.9s;
+    border: 3px solid white;
+}
+
+.content2 p {
+    text-align: center;
+    transition: 0.9s;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    opacity: 1;
+    padding-rightn: 10px;
+}
+
+.content2:hover p {
+    transition: 0.9s;
+    color: white;
+    opacity: 0;
+}
+
+.content2:hover {
+    background: url("img/style_design-games/God_of_War/persona_Атрей.jpg") center / cover no-repeat;
+    transition: 0.9s;
+}
+
+/*Content3*/
+.content3 {
+    width: 33%;
+    height: 400px;
+    float: left;
+    background: url("img/style_design-games/God_of_War/God_of_War_logo.jpg") center / cover no-repeat;
+    display: block;
+    position: relative;
+    transition: 0.9s;
+    border: 3px solid white;
+}
+
+.content3 p {
+    text-align: center;
+    transition: 0.9s;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    opacity: 1;
+    padding-rightn: 10px;
+}
+
+.content3:hover p {
+    transition: 0.9s;
+    color: white;
+    opacity: 0;
+}
+
+.content3:hover {
+    background: url("img/style_design-games/God_of_War/persona_Мімір.jpg") center / cover no-repeat;
+    transition: 0.9s;
+}
+
+/*Content4*/
+.content4 {
+    width: 33%;
+    height: 400px;
+    float: left;
+    background: url("img/style_design-games/God_of_War/God_of_War_logo.jpg") center / cover no-repeat;
+    display: block;
+    position: relative;
+    transition: 0.9s;
+    border: 3px solid white;
+}
+
+.content4 p {
+    text-align: center;
+    transition: 0.9s;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    opacity: 1;
+    padding-rightn: 10px;
+}
+
+.content4:hover p {
+    transition: 0.9s;
+    color: white;
+    opacity: 0;
+}
+
+.content4:hover {
+    background: url("img/style_design-games/God_of_War/persona_Йормунганд.jpg") center / cover no-repeat;
+    transition: 0.9s;
+}
+
+/*Content5*/
+.content5 {
+    width: 33%;
+    height: 400px;
+    float: left;
+    background: url("img/style_design-games/God_of_War/God_of_War_logo.jpg") center / cover no-repeat;
+    display: block;
+    position: relative;
+    transition: 0.9s;
+    border: 3px solid white;
+}
+
+.content5 p {
+    text-align: center;
+    transition: 0.9s;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    opacity: 1;
+    padding-rightn: 10px;
+}
+
+.content5:hover p {
+    transition: 0.9s;
+    color: white;
+    opacity: 0;
+}
+
+.content5:hover {
+    background: url("img/style_design-games/God_of_War/persona_Бальдр.png") center / cover no-repeat;
+    transition: 0.9s;
+}
+
+/*Content6*/
+.content6 {
+    width: 33%;
+    height: 400px;
+    float: left;
+    background: url("img/style_design-games/God_of_War/God_of_War_logo.jpg") center / cover no-repeat;
+    display: block;
+    position: relative;
+    transition: 0.9s;
+    border: 3px solid white;
+}
+
+.content6 p {
+    text-align: center;
+    transition: 0.9s;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    opacity: 1;
+    padding-rightn: 10px;
+}
+
+.content6:hover p {
+    transition: 0.9s;
+    color: white;
+    opacity: 0;
+}
+
+.content6:hover {
+    background: url("img/style_design-games/God_of_War/persona_Фрея.png") center / cover no-repeat;
+    transition: 0.9s;
+}
+
+/*Слайдер*/
+.slick-slider {
+}
+
+/*Обмежуюча оболонка*/
+.slick-list {
+    overflow: hidden;
+}
+
+/*Стрічка слайду*/
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+
+/*Слайд*/
+slick-slide {
+}
+
+/*Конкретний слайдер*/
+.slider {
+    position: relative;
+}
+
+.slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin: -60px 0px 0px 0px;
+    z-index: 10;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.slider .slick-arrow.slick-prev {
+    left: 0;
+    background: url("img/slaider/left-arrow.svg") 0 0 / 100% no-repeat;
+    border: 0px solid white;
+}
+
+.slider .slick-arrow.slick-next {
+    background: url("img/slaider/right-arrow.svg") 0 0 / 100% no-repeat;
+    right: 0;
+    border: 0px solid white;
+}
+
+.slider-item {
+    padding-top: 20px;
+    text-align: center;
+    height: 585px;
+    width: 100%;
+}
+
+.slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider .slick-dots li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.slider .slick-dots button {
+    font-size: 0;
+    width: 8px;
+    height: 13px;
+    background: orangered;
+    border-radius: 50%;
+    border: 0px;
+}
+
+.slider .slick-dots li.slick-active button {
+    background: transparent;
+    background: darkgray;
+    border: 1px solid wheat;
+}
+
+
+/*icons*/
+.container {
+    display: flex;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+}
+.social {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    list-style: none;
+    width: 400px;
+}
+.social_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 5px solid white;
+    font-size: 25px;
+    transition: all 0.3s;
+}
+.facebook:hover {
+    border-color: #3636be;
+    box-shadow: 0px 0px 6px #3636be ;
+    color: #3636be;
+}
+.instagram:hover {
+    border-color: #f3209b;
+    box-shadow: 0px 0px 6px #f3209b;
+    color: #f3209b;
+}
+.twitter:hover {
+    border-color: #00aced;
+    box-shadow: 0px 0px 6px #00aced;
+    color: #00aced;
+}
+.whatsapp:hover {
+    border-color: #16bc16;
+    box-shadow: 0px 0px 6px #16bc16;
+    color: #16bc16;
+}
+.youtube:hover {
+    border-color: #ff0000;
+    box-shadow: 0px 0px 6px  #ff0000;
+    color:  #ff0000;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 12px;
+    width: 100%;
+    height: 90px;
+    padding: 21px;
+    background-color: orangered;
+}
+
+.footer p {
+    display: flex;
+    color: white;
+    float: right;
+    margin: 0 0 25px 0;
+}

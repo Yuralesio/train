@@ -1,0 +1,803 @@
+/*GENERAL STYLES*/
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: Calibri;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/*header*/
+.title {
+    display: flex;
+    width: 100%;
+    padding-left: 75px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    font-size: 36px;
+    margin-right: 85px;
+    border-bottom: 3px solid orangered;
+    margin-bottom: 0;
+}
+.title h2 {
+    float: left;
+}
+
+.img-log {
+    position: relative;
+    left: 30%;
+    bottom: 100%;
+    width: 90px;
+    height: 85px;
+}
+/*(Menu)*/
+.header{
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: white;
+}
+.side {
+    display: flex;
+    position: absolute;
+    left: 34%;
+}
+
+ul li {
+    list-style-type: none;
+
+}
+
+a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.menu a {
+    background: white;
+    color: black;
+    display: inline-block;
+    padding: 20px;
+    transition: 0.5s all;
+    font-weight: bold;
+}
+
+.menu_list {
+    position: relative;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu_drop {
+    position: absolute;
+    right: 0px;
+    display: none;
+}
+
+.menu a:hover {
+    background: orangered;
+    color: white;
+    padding: 10px 10px 10px 10px;
+}
+
+.menu_list:hover .menu_drop {
+    display: block;
+    z-index: 2;
+}
+/*Content*/
+/*Слайдер*/
+.slick-list{
+    overflow: hidden;
+}
+
+.slick-track{
+    display: flex;
+    align-items: flex-start;
+}
+
+.slider{
+    position: relative;
+
+}
+.slider .slick-arrow{
+    position: absolute;
+    top: 50%;
+    margin: -60px 0px 0px 0px;
+    z-index: 10;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+}
+.slider .slick-arrow.slick-prev{
+    left: 0;
+    background: url("img/slaider/left-arrow.svg") 0 0 / 100% no-repeat;
+    border: 0px solid white;
+}
+.slider .slick-arrow.slick-next{
+    background: url("img/slaider/right-arrow.svg") 0 0 / 100% no-repeat;
+    right: 0;
+    border: 0px solid white;
+}
+.slider-item{
+    padding-top: 20px ;
+    text-align: center;
+    height: 650px;
+    width: 100%;
+}
+
+.slider .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider .slick-dots li{
+    list-style: none;
+    margin: 0 10px;
+}
+.slider .slick-dots button{
+    font-size: 0;
+    width: 8px;
+    height: 13px;
+    background: orangered;
+    border-radius: 50%;
+    border: 0px;
+}
+.slider .slick-dots li.slick-active button {
+    background: transparent;
+    background: darkgray;
+    border: 1px solid wheat
+}
+
+/*content-hellowin*/
+.Hellowin{
+    margin-top: 90px;
+    width: 100%;
+    height: 250px;
+    background: url("img/main_img/Halloween.jpg")  center / cover no-repeat;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+.content-hellowin {
+    display: grid;
+    grid-template-columns:25% 25% 25% 25%;
+    grid-gap: 16px;
+    padding: 10px 300px;
+}
+
+
+/*.discount_1*/
+.discount_1 {
+    position: relative;
+    background: url("img/main_img/jedi.jpg") center / cover no-repeat;
+    height: 520px;
+    grid-column: 1/3;
+    grid-row: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.discount_1 h4 {
+    font-weight: bold;
+    font-size: 30px;
+    color: orangered;
+    transition: 0.9s;
+    transform: translateY(20px);
+    opacity: 0;
+}
+.discount_1 p {
+    font-weight: bold;
+    font-size: 30px;
+    color: orangered;
+    transition: 0.9s;
+    transform: translateY(20px);
+    opacity: 0;
+}
+.discount_1:before {
+    content: "";
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    color: orangered;
+    border-bottom: solid 3px;
+    border-top: solid 3px;
+    transition: 0.9s;
+    transform: scaleX(0);
+}
+.discount_1:after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    color: orangered;
+    border-left: solid 3px;
+    border-right: solid 3px;
+    transition: 0.9s;
+    transform: scaleY(0);
+}
+.discount_1:hover h4,
+.discount_1:hover p{
+    transform: translateY(0);
+    opacity: 1;
+}
+.discount_1:hover:before,
+.discount_1:hover:after {
+    transform: scale(1);
+}
+
+/*.discount_2*/
+
+.discount_2 {
+    position: relative;
+    background: url("img/main_img/fifa_21.jpeg") center / cover no-repeat;
+    height: 253px;
+    grid-column: 3/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.discount_2 h4 {
+    font-weight: bold;
+    font-size: 30px;
+    color: orangered;
+    transition: 0.9s;
+    transform: translateY(20px);
+    opacity: 0;
+}
+.discount_2 p {
+    font-weight: bold;
+    font-size: 30px;
+    color: orangered;
+    transition: 0.9s;
+    transform: translateY(20px);
+    opacity: 0;
+}
+.discount_2:before {
+    content: "";
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    color: orangered;
+    border-bottom: solid 3px;
+    border-top: solid 3px;
+    transition: 0.9s;
+    transform: scaleX(0);
+}
+.discount_2:after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    color: orangered;
+    border-left: solid 3px;
+    border-right: solid 3px;
+    transition: 0.9s;
+    transform: scaleY(0);
+}
+.discount_2:hover h4,
+.discount_2:hover p{
+    transform: translateY(0);
+    opacity: 1;
+}
+.discount_2:hover:before,
+.discount_2:hover:after {
+    transform: scale(1);
+}
+
+/*.discount_3*/
+.discount_3 {
+    position: relative;
+    background: url("img/main_img/Battlefield-V.jpg") center / cover no-repeat;
+    height: 252px;
+    grid-column: 4/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.discount_3 h4 {
+    font-weight: bold;
+    font-size: 30px;
+    color: orangered;
+    transition: 0.9s;
+    transform: translateY(20px);
+    opacity: 0;
+}
+.discount_3 p {
+    font-weight: bold;
+    font-size: 30px;
+    color: orangered;
+    transition: 0.9s;
+    transform: translateY(20px);
+    opacity: 0;
+}
+.discount_3:before {
+    content: "";
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    color: orangered;
+    border-bottom: solid 3px;
+    border-top: solid 3px;
+    transition: 0.9s;
+    transform: scaleX(0);
+}
+.discount_3:after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    color: orangered;
+    border-left: solid 3px;
+    border-right: solid 3px;
+    transition: 0.9s;
+    transform: scaleY(0);
+}
+.discount_3:hover h4,
+.discount_3:hover p{
+    transform: translateY(0);
+    opacity: 1;
+}
+.discount_3:hover:before,
+.discount_3:hover:after {
+    transform: scale(1);
+}
+
+/*.discount_4*/
+.discount_4 {
+    position: relative;
+    background: url("img/main_img/assassins.jpg") center / cover no-repeat;
+    height: 250px;
+    grid-column: 3/5;
+    grid-row: 2/2;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.discount_4 h4 {
+    font-weight: bold;
+    font-size: 30px;
+    color: orangered;
+    transition: 0.9s;
+    transform: translateY(20px);
+    opacity: 0;
+}
+.discount_4 p {
+    font-weight: bold;
+    font-size: 30px;
+    color: orangered;
+    transition: 0.9s;
+    transform: translateY(20px);
+    opacity: 0;
+}
+.discount_4:before {
+    content: "";
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    color: orangered;
+    border-bottom: solid 3px;
+    border-top: solid 3px;
+    transition: 0.9s;
+    transform: scaleX(0);
+}
+.discount_4:after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    color: orangered;
+    border-left: solid 3px;
+    border-right: solid 3px;
+    transition: 0.9s;
+    transform: scaleY(0);
+}
+.discount_4:hover h4,
+.discount_4:hover p{
+    transform: translateY(0);
+    opacity: 1;
+}
+.discount_4:hover:before,
+.discount_4:hover:after {
+    transform: scale(1);
+}
+
+/*.discount_5*/
+.discount_5 {
+    position: relative;
+    background: url("img/main_img/Resident.jpg") center / cover no-repeat;
+    height: 250px;
+    grid-column: 1/2;
+    grid-row: 3/6;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.discount_5 h4 {
+    font-weight: bold;
+    font-size: 30px;
+    color: orangered;
+    transition: 0.9s;
+    transform: translateY(20px);
+    opacity: 0;
+}
+.discount_5 p {
+    font-weight: bold;
+    font-size: 30px;
+    color: orangered;
+    transition: 0.9s;
+    transform: translateY(20px);
+    opacity: 0;
+}
+.discount_5:before {
+    content: "";
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    color: orangered;
+    border-bottom: solid 3px;
+    border-top: solid 3px;
+    transition: 0.9s;
+    transform: scaleX(0);
+}
+.discount_5:after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    color: orangered;
+    border-left: solid 3px;
+    border-right: solid 3px;
+    transition: 0.9s;
+    transform: scaleY(0);
+}
+.discount_5:hover h4,
+.discount_5:hover p{
+    transform: translateY(0);
+    opacity: 1;
+}
+.discount_5:hover:before,
+.discount_5:hover:after {
+    transform: scale(1);
+}
+
+/*.discount_6*/
+.discount_6 {
+    position: relative;
+    background: url("img/main_img/Far_Cry_5_cover.png") center / cover no-repeat;
+    height: 250px;
+    grid-column: 2/3;
+    grid-row: 3/6;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.discount_6 h4 {
+    font-weight: bold;
+    font-size: 30px;
+    color: orangered;
+    transition: 0.9s;
+    transform: translateY(20px);
+    opacity: 0;
+}
+.discount_6 p {
+    font-weight: bold;
+    font-size: 30px;
+    color: orangered;
+    transition: 0.9s;
+    transform: translateY(20px);
+    opacity: 0;
+}
+.discount_6:before {
+    content: "";
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    color: orangered;
+    border-bottom: solid 3px;
+    border-top: solid 3px;
+    transition: 0.9s;
+    transform: scaleX(0);
+}
+.discount_6:after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    color: orangered;
+    border-left: solid 3px;
+    border-right: solid 3px;
+    transition: 0.9s;
+    transform: scaleY(0);
+}
+.discount_6:hover h4,
+.discount_6:hover p{
+    transform: translateY(0);
+    opacity: 1;
+}
+.discount_6:hover:before,
+.discount_6:hover:after {
+    transform: scale(1);
+}
+
+/*.discount_7*/
+.discount_7 {
+    position: relative;
+    background: url("img/main_img/Bloodborn.jpg")  center / cover no-repeat;
+    height: 250px;
+    grid-column: 3/5;
+    grid-row: 3/5;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.discount_7 h4 {
+    font-weight: bold;
+    font-size: 30px;
+    color: orangered;
+    transition: 0.9s;
+    transform: translateY(20px);
+    opacity: 0;
+}
+.discount_7 p {
+    font-weight: bold;
+    font-size: 30px;
+    color: orangered;
+    transition: 0.9s;
+    transform: translateY(20px);
+    opacity: 0;
+}
+.discount_7:before {
+    content: "";
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    color: orangered;
+    border-bottom: solid 3px;
+    border-top: solid 3px;
+    transition: 0.9s;
+    transform: scaleX(0);
+}
+.discount_7:after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    color: orangered;
+    border-left: solid 3px;
+    border-right: solid 3px;
+    transition: 0.9s;
+    transform: scaleY(0);
+}
+.discount_7:hover h4,
+.discount_7:hover p{
+    transform: translateY(0);
+    opacity: 1;
+}
+.discount_7:hover:before,
+.discount_7:hover:after {
+    transform: scale(1);
+}
+
+/*content-ps_plus*/
+.ps_plus{
+    margin-top: 90px;
+    width: 100%;
+    height: 250px;
+    background: url("img/main_img/psplus.jpg")  center / cover no-repeat;
+    padding: 20px 0;
+}
+h1{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+}
+.content-ps_plus {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 16px;
+    padding: 10px 350px;
+}
+.content-ps_plus p {
+    height: 75px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.game_1{
+    background: url("img/main_img/Erica.jpg")  center / cover no-repeat;
+    height: 300px;
+}
+.game_2{
+    background: url("img/main_img/heavy rain.jpg")  center / cover no-repeat;
+    height: 300px;
+}
+.game_3{
+    background: url("img/main_img/God_of_War.jpg")  center / cover no-repeat;
+    height: 300px;
+}
+.button {
+    color: white;
+    background: orangered;
+    border-radius: 60px;
+    justify-content: center;
+    border: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: slategray;
+}
+
+/*content-news*/
+.PSvsXB {
+    margin-top: 90px;
+    width: 100%;
+    height: 650px;
+    background:  url("img/main_img/nextgen.jpg")  center / cover no-repeat;
+    padding: 20px 0;
+}
+
+.content-news {
+    display: flex;
+    justify-content: center;
+}
+.news_1{
+    height: 550px;
+    width: 35%;
+    margin: 20px;
+}
+.news_2{
+    height: 550px;
+    width: 35%;
+    margin: 20px;
+}
+
+.img{
+    width: 100%;
+    height: 350px;
+    background: url("img/main_img/ps5.png")center / cover no-repeat;
+    z-index: 3;
+}
+.img_2{
+    width: 100%;
+    height: 350px;
+    background: url("img/main_img/xbox.jpg")center / cover no-repeat;
+    z-index: 3;
+}
+.text{
+    color: black;
+    padding: 0 30px;
+    height: 200px;
+    width: 100%;
+}
+h2{
+    padding: 0;
+    text-align: center;
+}
+.button_2 {
+    background: orangered;
+    text-align: center;
+    color: slategrey;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    margin: 0 165px;
+}
+.button_2 h3 {
+    color: white;
+    font-weight: bold;
+}
+.button_2:hover {
+
+    background: slategray;
+}
+/*icons*/
+.container {
+    display: flex;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+}
+.social {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    list-style: none;
+    width: 400px;
+}
+.social_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 5px solid white;
+    font-size: 25px;
+    transition: all 0.3s;
+}
+.facebook:hover {
+    border-color: #3636be;
+    box-shadow: 0px 0px 6px #3636be ;
+    color: #3636be;
+}
+.instagram:hover {
+    border-color: #f3209b;
+    box-shadow: 0px 0px 6px #f3209b;
+    color: #f3209b;
+}
+.twitter:hover {
+    border-color: #00aced;
+    box-shadow: 0px 0px 6px #00aced;
+    color: #00aced;
+}
+.whatsapp:hover {
+    border-color: #16bc16;
+    box-shadow: 0px 0px 6px #16bc16;
+    color: #16bc16;
+}
+.youtube:hover {
+    border-color: #ff0000;
+    box-shadow: 0px 0px 6px  #ff0000;
+    color:  #ff0000;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 12px;
+    width: 100%;
+    height: 90px;
+    padding: 21px;
+    background-color: orangered;
+}
+
+.footer p {
+    display: flex;
+    color: white;
+    float: right;
+    margin: 0 0 25px 0;
+}
+

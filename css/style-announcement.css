@@ -1,0 +1,290 @@
+/*GENERAL STYLES*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Calibri;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/*header*/
+.title {
+    display: flex;
+    width: 100%;
+    padding-left: 75px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    font-size: 36px;
+    margin-right: 85px;
+    border-bottom: 3px solid orangered;
+    margin-bottom: 0;
+}
+.title h2 {
+    float: left;
+}
+
+.img-log {
+    display: flex;
+    justify-content: center;
+    width:90px;
+    height:85px;
+}
+/*(Menu)*/
+.header{
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: white;
+}
+.side {
+    display: flex;
+    position: absolute;
+    left: 34%;
+}
+
+ul li {
+    list-style-type: none;
+
+}
+
+a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.menu a {
+    background: white;
+    color: black;
+    display: inline-block;
+    padding: 20px;
+    transition: 0.5s all;
+    font-weight: bold;
+}
+
+.menu_list {
+    position: relative;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu_drop {
+    position: absolute;
+    right: 0px;
+    display: none;
+}
+
+.menu a:hover {
+    background: orangered;
+    color: white;
+    padding: 10px 10px 10px 10px;
+}
+
+.menu_list:hover .menu_drop {
+    display: block;
+    z-index: 2;
+}
+
+
+/*Content*/
+.inner-content {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 6px;
+    padding: 0px 15px;
+}
+.content1{
+    background: url("img/announcement img/sackboy.jpg")  center / cover no-repeat ;
+    grid-column: 1/2;
+    height: 250px;
+    transition: 0.9s;
+}
+.content1 p{
+    transition: 0.9s;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    opacity: 0;
+    padding-left: 25px;
+}
+.content1:hover p{
+    transition: 0.9s;
+    color: white;
+    opacity: 1;
+}
+.content1:hover {
+    background: url("img/announcement img/sackboy2.jpg") center / cover no-repeat ;
+    transition: 0.9s;
+}
+
+.content2{
+    background: url("img/announcement img/Falconeer.jpg") center / cover no-repeat;
+    grid-column: 1/2;
+    height: 250px;
+    transition: 0.9s;
+}
+.content2 p{
+    transition: 0.9s;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    opacity: 0;
+    padding-left: 25px;
+}
+.content2:hover p{
+    transition: 0.9s;
+    color: white;
+    opacity: 1;
+}
+.content2:hover {
+    background: url("img/announcement img/Falconeer2.jpg") center / cover no-repeat ;
+    transition: 0.9s;
+}
+
+.content3{
+    background: url("img/news_img/Cyberpunk.jpg") center / cover no-repeat;
+    grid-column: 1/2;
+    height: 250px;
+    transition: 0.9s;
+}
+.content3 p{
+    transition: 0.9s;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    opacity: 0;
+    padding-left: 25px;
+}
+.content3:hover p{
+    transition: 0.9s;
+    color: white;
+    opacity: 1;
+}
+.content3:hover {
+    background: url("img/news_img/Cyberpunk_news.jpg") center / cover no-repeat ;
+    transition: 0.9s;
+}
+
+.content4{
+    background: url("img/announcement img/spider.jpg")center / cover no-repeat;
+    grid-column: 2/3;
+    grid-row: 1/4;
+    height: 762px;
+    transition: 0.9s;
+}
+.content4 p{
+    transition: 0.9s;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    opacity: 0;
+    padding-left: 25px;
+}
+.content4:hover p{
+    transition: 0.9s;
+    color: white;
+    opacity: 1;
+}
+.content4:hover {
+    background: url("img/announcement img/spider2.jpg")center / cover no-repeat;
+    transition: 0.9s;
+}
+
+.content5{
+    background: url("img/announcement img/assassin.jpg")center / cover no-repeat;
+    grid-column: 3/4;
+    grid-row: 1/4;
+    height: 762px;
+    transition: 0.9s;
+}
+.content5 p{
+    transition: 0.9s;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    opacity: 0;
+    padding-left: 25px;
+}
+.content5:hover p{
+    transition: 0.9s;
+    color: white;
+    opacity: 1;
+}
+.content5:hover {
+    background: url("img/announcement img/assassin2.jpg") center / cover no-repeat;
+    transition: 0.9s;
+}
+
+/*icons*/
+.container {
+    display: flex;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+}
+.social {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    list-style: none;
+    width: 400px;
+}
+.social_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 5px solid white;
+    font-size: 25px;
+    transition: all 0.3s;
+}
+.facebook:hover {
+    border-color: #3636be;
+    box-shadow: 0px 0px 6px #3636be ;
+    color: #3636be;
+}
+.instagram:hover {
+    border-color: #f3209b;
+    box-shadow: 0px 0px 6px #f3209b;
+    color: #f3209b;
+}
+.twitter:hover {
+    border-color: #00aced;
+    box-shadow: 0px 0px 6px #00aced;
+    color: #00aced;
+}
+.whatsapp:hover {
+    border-color: #16bc16;
+    box-shadow: 0px 0px 6px #16bc16;
+    color: #16bc16;
+}
+.youtube:hover {
+    border-color: #ff0000;
+    box-shadow: 0px 0px 6px  #ff0000;
+    color:  #ff0000;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 12px;;
+    width: 100%;
+    height: 90px;
+    padding: 21px;
+    background-color: orangered;
+}
+
+.footer p {
+    display: flex;
+    color: white;
+    float: right;
+    margin: 0 0 0 0;
+}

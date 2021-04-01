@@ -1,0 +1,236 @@
+/*GENERAL STYLES*/
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: Calibri;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/*header*/
+.header {
+    display: flex;
+    width: 100%;
+}
+
+.title {
+    width: 100%;
+    padding-left: 75px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    font-size: 36px;
+    border-bottom: 3px solid orangered;
+    margin-right: 85px;
+    margin-bottom: 0;
+}
+
+.img-log {
+    position: relative;
+    left: 30%;
+    bottom: 100%;
+    width: 90px;
+    height: 85px;
+}
+
+/*(Menu)*/
+.header{
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: white;
+}
+.side {
+    display: flex;
+    position: absolute;
+    left: 34%;
+}
+
+ul li {
+    list-style-type: none;
+
+}
+
+a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.menu a {
+    background: white;
+    color: black;
+    display: inline-block;
+    padding: 20px;
+    transition: 0.5s all;
+    font-weight: bold;
+}
+
+.menu_list {
+    position: relative;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu_drop {
+    position: absolute;
+    right: 0px;
+    display: none;
+}
+
+.menu a:hover {
+    background: orangered;
+    color: white;
+    padding: 10px 10px 10px 10px;
+}
+
+.menu_list:hover .menu_drop {
+    display: block;
+    z-index: 2;
+}
+
+/*content*/
+.content {
+    text-align: center;
+
+}
+
+.collections {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 16px;
+    padding: 10px 10px;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.collection-ithem img {
+    width: 45%;
+}
+
+.collection-text h3 {
+    padding: 0px 0px 0px 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.collection-text p {
+    padding: 0px 0px 0px 30px;
+    max-height: 75px;
+    overflow: hidden;
+    width: 400px;
+    margin: 0px 20px;
+}
+
+.collection-text button {
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+.button {
+    background: orangered;
+    color: white;
+}
+
+.button:hover {
+    background: slategray;
+}
+
+/*icons*/
+.container {
+    display: flex;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    list-style: none;
+    width: 400px;
+}
+
+.social_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 5px solid white;
+    font-size: 25px;
+    transition: all 0.3s;
+}
+
+.facebook:hover {
+    border-color: #3636be;
+    box-shadow: 0px 0px 6px #3636be;
+    color: #3636be;
+}
+
+.instagram:hover {
+    border-color: #f3209b;
+    box-shadow: 0px 0px 6px #f3209b;
+    color: #f3209b;
+}
+
+.twitter:hover {
+    border-color: #00aced;
+    box-shadow: 0px 0px 6px #00aced;
+    color: #00aced;
+}
+
+.whatsapp:hover {
+    border-color: #16bc16;
+    box-shadow: 0px 0px 6px #16bc16;
+    color: #16bc16;
+}
+
+.youtube:hover {
+    border-color: #ff0000;
+    box-shadow: 0px 0px 6px #ff0000;
+    color: #ff0000;
+}
+
+/* FOOTER */
+.footer {
+
+    width: 100%;
+    height: 90px;
+    padding: 21px;
+    background-color: orangered;
+}
+
+.footer p {
+    display: flex;
+    color: white;
+    float: right;
+    margin: 0 0 25px 0;
+}
+
+
+
+
+
+
+
+
+
+
